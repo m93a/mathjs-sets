@@ -1,6 +1,6 @@
 # Mathematical sets in math.js
 Important sets in mathematics can be ordered into a sequence:  
-ℕ ⊂ ℕ₀ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ<sub>c</sub> ⊂ ℝ ⊂ ℂ ⊂ ℍ
+[ℕ](https://en.wikipedia.org/wiki/Natural_number) ⊂ [ℕ₀](https://en.wikipedia.org/wiki/Natural_number#Notation) ⊂ [ℤ](https://en.wikipedia.org/wiki/Integer) ⊂ [𝔻](https://en.wikipedia.org/wiki/Decimal#Decimal_fractions) ⊂ [ℚ](https://en.wikipedia.org/wiki/Rational_number) ⊂ [ℝ<sub>c</sub>](https://en.wikipedia.org/wiki/Computable_number) ⊂ [ℝ](https://en.wikipedia.org/wiki/Real_number) ⊂ [ℂ](https://en.wikipedia.org/wiki/Complex_number) ⊂ [ℍ](https://en.wikipedia.org/wiki/Quaternion)
 
 ## ℕ, ℕ₀ naturals (with zero)
  * not much to say about them
