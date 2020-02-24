@@ -7,7 +7,7 @@ Important sets in mathematics can be ordered into a sequence:
  * special case of more interesting ℤ
 
 ## ℤ integers: `BigInt`
- * they form an additive group
+ * they form an [additive group](https://en.wikipedia.org/wiki/Additive_group)
  * EcmaScript 2020 introduced the `BigInt` type which exactly matches ℤ [[1]](https://tc39.es/ecma262/#sec-ecmascript-language-types-bigint-type)
  * the important functionality can be polyfilled [[2]](https://github.com/peterolson/BigInteger.js)
  * math.js doesn't support operations on `BigInt` yet, see [#1096](https://github.com/josdejong/mathjs/issues/1096)
@@ -21,12 +21,14 @@ Important sets in mathematics can be ordered into a sequence:
  
 ## ℚ rationals: new `Fraction`
  * _a_ ∈ ℚ ⇔ ∃ _p_, _q_ ∈ ℤ: _a_ = <sup><i>p</i></sup>／<sub><i>q</i></sub>
+ * they form a [field](https://en.wikipedia.org/wiki/Field_(mathematics)) with addition and multiplication
  * math.js uses the type `Fraction` borrowed from [fraction.js](https://github.com/infusion/Fraction.js)
    * right now, `Fraction` has similar limits to `BigNumber`, but there are plans to fix it – once [#28](https://github.com/infusion/Fraction.js/issues/28) is fixed, `Fraction` will be able to represent any number from ℚ
    * `NaN` and ±∞ are also valid in `Fraction` [[6]](https://runkit.com/embed/kjq3h7w3txz1)
 
 ## ℝ<sub>c</sub> computables
  * [computable numbers](https://en.wikipedia.org/wiki/Computable_number) are the real numbers that can be computed to within any desired precision by a finite, terminating algorithm
+ * they form a [field](https://en.wikipedia.org/wiki/Field_(mathematics)) with addition and multiplication
  
  * notable subsets: [constructible numbers](https://en.wikipedia.org/wiki/Constructible_number) (q, √q) and [trigonometric numbers](https://en.wikipedia.org/wiki/Trigonometric_number) (sin qπ, cos qπ)
  
@@ -45,7 +47,7 @@ Important sets in mathematics can be ordered into a sequence:
 ## ℂ complex numbers
  * a very small subset of them can be represented by the `Complex` type borrowed from [complex.js](https://github.com/infusion/Complex.js)
  * a somewhat larger set (complex decimals) could be represented when [#694](https://github.com/josdejong/mathjs/issues/694) is resolved
- * the largest representable set are the complex computables ℂ<sub>c</sub> = ℝ<sub>c</sub>×ℝ<sub>c</sub>
+ * the largest theoretically representable set are the complex computables ℂ<sub>c</sub> = ℝ<sub>c</sub>×ℝ<sub>c</sub>
 
 ## ℍ quaternions
  * there is currently no datatype for quaternions, but there has been some progress towards it, see [#794](https://github.com/josdejong/mathjs/pull/794)
