@@ -34,7 +34,7 @@ Important sets in mathematics can be ordered into a sequence:
    * math.js doesn't currently exploit this, possible progress with [#1732](https://github.com/josdejong/mathjs/issues/1732)
  * in theory it's possible to add a `Computable` type to math.js
    * user would pass an algorithm that, given _N_, computes the number to _N_ decimal places
-   * operations that support `BigNumber` could easily be extended to `Computable`: they would return another `Computable` which, given _N_, would _guesstimate_ the error propagation through the operation and demand the corresponding precission from its argument, then it would variate the argument's value a little and check whether the error propagation guess was correct; if the guess was correct and the result is in given bounds, it would return the result, else it would request the argument with higher precision
+   * operations that support `BigNumber` could be extended to `Computable`: they would return another `Computable` which, given _N_, would _guesstimate_ the error propagation through the operation and demand the corresponding precission from its argument, then it would variate the argument's value a little and check whether the error propagation guess was correct; if the guess was correct and the result is in given bounds, it would return the result, else it would request the argument with higher precision
    * SymPy supports most of this functionality in its [`N` function](https://docs.sympy.org/latest/modules/evalf.html)
 
 ## ℝ reals
